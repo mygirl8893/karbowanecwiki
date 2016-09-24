@@ -1,6 +1,6 @@
 On this page you will find description of every method in Karbowanec RPC Wallet API. Karbowanec RPC Wallet is a HTTP server which provides JSON 2.0 RPC interface for Karbowanec payment operations and address management. Each method has its own page that can be found by clicking on this method. 
 
-More on how to start and operate Karbowanec RPC Wallet can be found here: [[Karbowanec_RPC_Wallet | Karbowanec RPC Wallet]]
+More on how to start and operate Karbowanec RPC Wallet can be found here: [[Karbowanec RPC Wallet]]
 
 To make a JSON PRC request to your Karbowanec RPC Wallet you should use POST request that looks like this: 
 ```
