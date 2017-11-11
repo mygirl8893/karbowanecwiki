@@ -190,5 +190,5 @@ If you want to delete RPC wallet you have to unregister windows service first (i
 
 Karbowanec RPC Wallet API allows you to create addresses for your users, accept and send transactions and much more. 
 
-Detailed description for every Karbowanec RPC Wallet API method can be found here: [[Karbowanec_RPC_Wallet_JSON_RPC_API| Karbowanec RPC Wallet JSON RPC API]]
+Detailed description for every Karbowanec RPC Wallet API method can be found here: [[RPC Wallet API]]
 
