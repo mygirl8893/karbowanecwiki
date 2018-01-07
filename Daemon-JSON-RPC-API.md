@@ -1,15 +1,15 @@
 To start Daemon JSON RPC API server you should specify a port on which server binds (additionally to standard daemon's arguments). You can choose any free port. To do that execute the following command from the command line:
 ```
- karbowanecd --rpc-bind-port=32348 
+ niobiod --rpc-bind-port=8314 
 ```
 If you want Daemon to be accessed from other computer not only yours you should also use a --rpc-bind-ip 0.0.0.0 command. To do that execute the following command from the command line:
 ```
- karbowanecd --rpc-bind-ip=0.0.0.0 --rpc-bind-port=32348 
+ niobiod --rpc-bind-ip=0.0.0.0 --rpc-bind-port=8314 
 ```
 Having done that you're ready to operate with the daemon through the following API URLs (e.g., your IP address is 126.0.1.100):
 ```
- http://126.0.1.100:32348/json_rpc
- http://localhost:32348/json_rpc
+ http://126.0.1.100:8314/json_rpc
+ http://localhost:8314/json_rpc
 ```
 ## Available commands ##
 
@@ -25,8 +25,8 @@ Input arguments:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
- 	"description": "Schema for transfer method in Karbowanec wallet",
+ 	"title": "NBR JSON RPC API",
+ 	"description": "Schema for transfer method in Nióbio wallet",
  	"type": "object", 
  	
  	"properties" : {
@@ -44,7 +44,7 @@ Return value schema:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
+ 	"title": "NBR JSON RPC API",
  	"type": "object",
  
  	"properties" : {
@@ -78,8 +78,8 @@ Input arguments:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
- 	"description": "Schema for transfer method in Karbowanec wallet",
+ 	"title": "NBR JSON RPC API",
+ 	"description": "Schema for transfer method in Nióbio wallet",
  	"type": "object", 
  	
  	"properties" : {
@@ -100,7 +100,7 @@ Return value schema:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
-  	"title": "KRB JSON RPC API",
+  	"title": "NBR JSON RPC API",
  	"type": "object",
  
  	"properties" : {
@@ -126,8 +126,8 @@ Input arguments:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
- 	"description": "Schema for transfer method in Karbowanec wallet",
+ 	"title": "NBR JSON RPC API",
+ 	"description": "Schema for transfer method in Nióbio wallet",
  	"type": "object", 
  	
  	"properties" : {
@@ -151,7 +151,7 @@ Return value schema
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
+ 	"title": "NBR JSON RPC API",
  	"type": "object", 
  
  	"properties" : {
@@ -189,8 +189,8 @@ Input arguments:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
- 	"description": "Schema for transfer method in Karbowanec wallet",
+ 	"title": "NBR JSON RPC API",
+ 	"description": "Schema for transfer method in Nióbio wallet",
  	"type": "object", 
  	
  	"properties" : {
@@ -211,7 +211,7 @@ Return value schema:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
+ 	"title": "NBR JSON RPC API",
  	"type": "object",
  
  	"properties" : {
@@ -238,8 +238,8 @@ Input arguments:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
- 	"description": "Schema for transfer method in Karbowanec wallet",
+ 	"title": "NBR JSON RPC API",
+ 	"description": "Schema for transfer method in Nióbio wallet",
  	"type": "object", 
  	
  	"properties" : {
@@ -257,7 +257,7 @@ Return value schema:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
+ 	"title": "NBR JSON RPC API",
  	"type": "object", 
     
  	"properties" : {
@@ -348,8 +348,8 @@ Input arguments:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
- 	"description": "Schema for transfer method in Karbowanec wallet",
+ 	"title": "NBR JSON RPC API",
+ 	"description": "Schema for transfer method in Nióbio wallet",
  	"type": "object", 
  	
  	"properties" : {
@@ -382,8 +382,8 @@ Input arguments:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
- 	"description": "Schema for transfer method in Karbowanec wallet",
+ 	"title": "NBR JSON RPC API",
+ 	"description": "Schema for transfer method in Nióbio wallet",
  	"type": "object", 
  	
  	"properties" : {
@@ -416,8 +416,8 @@ Input arguments:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
- 	"description": "Schema for transfer method in Karbowanec wallet",
+ 	"title": "NBR JSON RPC API",
+ 	"description": "Schema for transfer method in Nióbio wallet",
  	"type": "object", 
  	
  	"properties" : {
@@ -435,7 +435,7 @@ Return value schema:
 ```
  {
  	"$schema": "http://json-schema.org/draft-04/schema#",
- 	"title": "KRB JSON RPC API",
+ 	"title": "NBR JSON RPC API",
  	"type": "object",
  
  	"properties" : {
