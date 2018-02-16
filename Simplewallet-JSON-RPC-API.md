@@ -69,7 +69,7 @@ Output:
 
 Transfer money to several destinations with specified fee, mixin ambiguity degree, and unlock time.
 
-Please note: fee param is a mandatory and should not be less than 0.01 BCN
+Please note: fee param is a mandatory and should not be less than 0.0001 KRB
 
 URL:
 ```
