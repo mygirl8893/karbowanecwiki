@@ -33,7 +33,7 @@ sudo chgrp -R karbo /var/log/karbowanecd
 sudo chmod -R 770 /var/log/karbowanecd
 ```
 
-4.1 Lets check if everything is ok. Try to run daemon with _karbo_ user permission:
+5. Lets check if everything is ok. Try to run daemon with _karbo_ user permission:
 
 ```
 sudo -u karbo /opt/karbo/karbowanecd --data-dir=/opt/karbo/.karbowanec --log-file=/var/log/karbowanecd --restricted-rpc --rpc-bind-ip=0.0.0.0 --rpc-bind-port=32348 --fee-address=KaAxHCPtJaFGDq4xLn3fASf3zVrAmqyE4359zn3r3deVjCeM3CYq7K4Y1pkfZkjfRd1W2VPXVZdA5RBdpc4Vzamo1H4F5qZ
@@ -63,7 +63,7 @@ After=syslog.target
 
 [Service]
 User=karbo
-ExecStart=/opt/karbo/karbowanecd --data-dir=/opt/karbo/.karbowanec --log-file=/var/log/karbowanecd --restricted-rpc --rpc-bind-ip=0.0.0.0 --rpc-bind-port=32348 --fee-address=KaAxHCPtJaFGDq4xLn3fASf3zVrAmqyE4359zn3r3deVjCeM3CYq7K4Y1pkfZkjfRd1W2VPXVZdA5RBdpc4Vzamo1H4F5qZ
+ExecStart=/opt/karbo/karbowanecd --data-dir=/opt/karbo/.karbowanec --log-file=/var/log/karbowanecd --restricted-rpc --enable-cors=*  --enable-blockchain-indexes --rpc-bind-ip=0.0.0.0 --rpc-bind-port=32348 --fee-address=KaAxHCPtJaFGDq4xLn3fASf3zVrAmqyE4359zn3r3deVjCeM3CYq7K4Y1pkfZkjfRd1W2VPXVZdA5RBdpc4Vzamo1H4F5qZ
 SuccessExitStatus=143
 
 [Install]
