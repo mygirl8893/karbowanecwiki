@@ -39,7 +39,17 @@ sudo chmod -R 770 /var/log/karbowanecd
 sudo -u karbo /opt/karbo/karbowanecd --data-dir=/opt/karbo/.karbowanec --log-file=/var/log/karbowanecd --restricted-rpc --rpc-bind-ip=0.0.0.0 --rpc-bind-port=32348 --fee-address=KaAxHCPtJaFGDq4xLn3fASf3zVrAmqyE4359zn3r3deVjCeM3CYq7K4Y1pkfZkjfRd1W2VPXVZdA5RBdpc4Vzamo1H4F5qZ
 ```
 
-5. To start _karbowanecd_ , we need to create service file in _/etc/systemd/system_:
+Stop it via entering `exit` inside daemon session.
+
+6. You could pre-download blockchain bootstrap to speed-up process:
+
+```
+cd ./opt/karbo/.karbowanec
+wget https://bootstrap.krbnodes.pp.ua/blockchain-2018-06-01.tar.gz
+tar -xvzf blockchain-2018-06-01.tar.gz
+```
+
+7. To start _karbowanecd_ , we need to create service file in _/etc/systemd/system_:
 
 ```
 less /etc/systemd/system/karbowanecd.service
@@ -62,7 +72,7 @@ WantedBy=multi-user.target
 
 Do not forget to change address to your wallet!
 
-6. Run service:
+8. Run service:
 
 ```
 sudo systemctl daemon-reload
@@ -70,7 +80,7 @@ sudo systemctl enable karbowanecd.service
 sudo systemctl start karbowanecd.service
 ```
 
-7. To check service status:
+9. To check service status:
 
 ```
 systemctl status karbowanecd.service
