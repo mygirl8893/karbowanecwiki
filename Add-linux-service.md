@@ -5,14 +5,14 @@ On this page you will find description how to run karbowanecd with JSON PRC as l
 1. Download latest linux version of karbowanec:
 
 ```
-wget http://karbowanec.com/download/Karbowanec_cli_64-bit_1.4.4.tar.gz
+wget https://github.com/seredat/karbowanec/releases/download/v.1.5.1/karbo-cli-1.5.1-64bit.tar.gz
 ```
 
 2. Unpack it to directory _/opt/karbo/_:
 
 ```
 sudo mkdir /opt/karbo/
-sudo tar -xf Karbowanec_cli_64-bit_1.4.4.tar.gz -C /opt/karbo1/
+sudo tar -xf karbo-cli-1.5.1-64bit.tar.gz -C /opt/karbo/
 ```
 
 3. To start service we will use user _karbo_, so lets create it and manage permissions:
@@ -52,7 +52,7 @@ tar -xvzf blockchain-2018-06-01.tar.gz
 7. To start _karbowanecd_ , we need to create service file in _/etc/systemd/system_:
 
 ```
-less /etc/systemd/system/karbowanecd.service
+nano /etc/systemd/system/karbowanecd.service
 ```
 
 ```
