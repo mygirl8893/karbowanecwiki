@@ -45,8 +45,8 @@ Stop it via entering `exit` inside daemon session.
 
 ```
 cd ./opt/karbo/.karbowanec
-wget https://bootstrap.krbnodes.pp.ua/blockchain-2018-06-01.tar.gz
-tar -xvzf blockchain-2018-06-01.tar.gz
+wget https://bootstrap.krbnodes.pp.ua/blockchain-$(date "+%Y-%m-%d").tar.gz
+tar -xvzf blockchain-$(date "+%Y-%m-%d").tar.gz -С /opt/karbo/.karbowanec
 ```
 
 7. To start _karbowanecd_ , we need to create service file in _/etc/systemd/system_:
